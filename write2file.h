@@ -17,7 +17,7 @@ FILE* pairfp=fopen("tmp","w+");
 
 
 void writeUrl(char *data,int No){
-  fprintf(urlfp,"%s %d\n",data,No);
+  fprintf(urlfp,"%d http://%s\n",No,data);
 }
 void writePair(int from,int to){
   fprintf(pairfp,"\n%d %d",from,to);
